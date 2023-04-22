@@ -121,5 +121,6 @@ valorProduto.forEach((valor) =>{
 
 
 
-
+let cardapiusLabelCep = document.querySelector('.myd-cart__checkout-label[for="input-delivery-zipcode"]');
+cardapiusLabelCep.innerHTML = "CEP"
 
