@@ -1,0 +1,88 @@
+[
+    {
+        "payment_metod": "Pix",
+        "total_value": 1361,
+        "quantiti_orders": 18
+    },
+    {
+        "payment_metod": "Dinheiro",
+        "total_value": 1306,
+        "quantiti_orders": 14
+    },
+    {
+        "payment_metod": "Cartão de Crédito",
+        "total_value": 374,
+        "quantiti_orders": 5
+    },
+    {
+        "payment_metod": "Cartão de Credito",
+        "total_value": 178,
+        "quantiti_orders": 3
+    },
+    {
+        "payment_metod": "Cartão de Débito",
+        "total_value": 129,
+        "quantiti_orders": 2
+    }
+][
+    {
+        "product_name": "Carnivorus",
+        "order_count": 35,
+        "total_sales": "1746.50",
+        "post_title": "1813"
+    },
+    {
+        "product_name": "Desejo Profundo",
+        "order_count": 6,
+        "total_sales": "234.00",
+        "post_title": "1791"
+    },
+    {
+        "product_name": "Combo Insano",
+        "order_count": 5,
+        "total_sales": "299.50",
+        "post_title": "1800"
+    },
+    {
+        "product_name": "Combo Barriga Cheia",
+        "order_count": 5,
+        "total_sales": "250.00",
+        "post_title": "1794"
+    },
+    {
+        "product_name": "Sem Recalque",
+        "order_count": 2,
+        "total_sales": "78.00",
+        "post_title": "1796"
+    },
+    {
+        "product_name": "Carnavalesca",
+        "order_count": 2,
+        "total_sales": "84.00",
+        "post_title": "1791"
+    },
+    {
+        "product_name": "Nunca Falha",
+        "order_count": "1",
+        "total_sales": "42.00",
+        "post_title": "1315"
+    },
+    {
+        "product_name": "Oxente!",
+        "order_count": "1",
+        "total_sales": "42.00",
+        "post_title": "1293"
+    },
+    {
+        "product_name": "Era uma vez a fome",
+        "order_count": "1",
+        "total_sales": "75.00",
+        "post_title": "1017"
+    },
+    {
+        "product_name": "Socorro Mainha",
+        "order_count": "1",
+        "total_sales": "42.00",
+        "post_title": "987"
+    }
+]
