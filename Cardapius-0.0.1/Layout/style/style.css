@@ -1,0 +1,80 @@
+.cardapius-cabecalho-main{
+    height: 200px;
+    background-color: red;
+}
+
+
+
+.cardapius-logo-funcionamento{
+    margin-bottom: -140px;
+}
+
+
+.cardapius-box-logo{
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.199);
+    
+}
+
+.cardapius-funcionamento{
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.cardapius-section-destaque{
+    padding-top: 140px;
+    background-color: yellow;
+    padding-bottom: 50px;
+
+}
+
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    color: black!important;
+
+
+}
+
+
+.cardapius-main-cardapio{
+    background-color: aqua
+
+
+}
+
+.cardapius-barra-categoria{
+    background-color: aliceblue;
+
+}
+.cardapius-text-category{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+
+.cardapius-item-categori-group::-webkit-scrollbar {
+    height: 2px; /* Largura da barra de rolagem */
+    
+}
+
+.cardapius-item-categori-group::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0); /* Cor do indicador de rolagem */
+    
+    border: none; /* Borda arredondada do indicador de rolagem */
+}
+
+.cardapius-item-categori-group::-webkit-scrollbar-track {
+    background-color: rgba(211, 211, 211, 0); /* Cor de fundo da barra de rolagem */ 
+}
+
+
+.cardapius-product-item{
+    background-color: red;
+
+
+}
