@@ -1,35 +1,30 @@
-.cardapius-cabecalho-main{
-    height: 200px;
+*{
+    margin: 0;
+    padding: 0;
+
+
+}
+.cardapius-cabecalho-main{  
     background-color: red;
 }
-
-
-
-.cardapius-logo-funcionamento{
-    margin-bottom: -140px;
-}
-
 
 .cardapius-box-logo{
     height: 150px;
     width: 150px;
     background-color: black;
     box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.199);
-    
 }
-
 .cardapius-funcionamento{
+    width: 100px;
     background-color: black;
     color: white;
     font-size: 13px;
     font-weight: 700;
 }
-
 .cardapius-section-destaque{
-    padding-top: 140px;
+    margin-top: -200px;
+    padding-top: 140px!important;
     background-color: yellow;
-    padding-bottom: 50px;
-
 }
 
 
@@ -74,7 +69,61 @@
 
 
 .cardapius-product-item{
-    background-color: red;
+    background-color: rgb(255, 255, 255);
+}
+
+.space-horario-text{
+    font-size: 13px;
 
 
+}
+.text-horario-funcionamento{
+    font-size: 13px;
+}
+
+
+#lista-categoria-drop-down{
+    left: 0;
+    margin-top: 55px;
+}
+
+.cardapius-text-category-dropdown{
+    color: black;
+}
+
+
+
+.cardapius-product-title{
+    font-size: 16px;
+}
+
+
+.cardapius-product-description{
+    font-size: 12px;
+
+}
+
+.cardapius-product-price{
+    font-size: 20px;
+}
+
+
+.bi.bi-bag-plus::before{
+    font-size: 25px;
+    font-weight: 700!important;
+}
+
+
+.text-title{
+    font-size: 16px;
+
+}
+.text-text{
+    padding-bottom: 8px;
+    font-size: 12px;
+
+}
+
+.cardapius-card-horario{
+    z-index: 5;
 }

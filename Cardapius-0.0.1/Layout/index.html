@@ -9,23 +9,48 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
 </head>
 <body>
-    <nav class="container-fluid d-flex justify-content-center align-items-end cardapius-cabecalho-main" id="cardapius-cabecalho">
-        <div class="cardapius-logo-funcionamento gap-3 d-flex flex-column">
+    <nav class="container-fluid d-flex py-5 justify-content-center align-items-end cardapius-cabecalho-main" id="cardapius-cabecalho">
+        <div class="cardapius-logo-funcionamento m-0 p-0 align-items-center container-fluid gap-2 d-flex flex-column">
             <div class="container cardapius-box-logo d-flex justify-content-center align-items-center p-3 rounded-4">
                 <img class="img-fluid" src="assets/img/logo.png" alt="logo" id="cardapius-logo">
             </div>
-            <p class="cardapius-funcionamento rounded-4 py-2 text-center" id="cardapius-funcionamento">ABERTO</p>
+            <p class="cardapius-funcionamento text-text m-0 rounded-4 py-2 text-center" id="cardapius-funcionamento">ABERTO</p>
+            <p class="text-text pb-0 fw-bold m-0">FRASE DE DESTAQUE FRASE DE DESTAQUE</p>
+            <div class="row container m-0 p-0 cardapius-informacao-empresa position-relative">
+                <div class="col-6 cardapius-datas-horarios-de-funcionamento">
+                    <p class="space-horario-text m-0 text-text text-nowrap text-end" data-bs-toggle="collapse"  data-bs-target="#cardapius-lista-funcionamento" aria-expanded="false" aria-controls="cardapius-lista-funcionamento text-text"><i class="bi bi-stopwatch"></i> Funcionamento  <i class="bi bi-caret-down-fill"></i></p>
+                    <div>
+                        <div class="collapse position-absolute" id="cardapius-lista-funcionamento">
+                          <div class="card card-body cardapius-card-horario z-3 w-100">
+                            <p class="text-horario-funcionamento text-text">Segunda: <span>12:20</span> Até as <span>22:30</span></p>
+                            <p class="text-horario-funcionamento text-text">Terça: <span>12:20</span> Até as <span>22:30</span></p>
+                            <p class="text-horario-funcionamento text-text">Quarta: <span>12:20</span> Até as <span>22:30</span></p>
+                            <p class="text-horario-funcionamento text-text">Quinta: <span>12:20</span> Até as <span>22:30</span></p>
+                            <p class="text-horario-funcionamento text-text">Sexta: <span>12:20</span> Até as <span>22:30</span></p>
+                            <p class="text-horario-funcionamento text-text">Sabado: <span>FECHADO</span></p>
+                            <p class="text-horario-funcionamento text-text">Domingo: <span>12:20</span> Até as <span>22:30</span></p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-horario-text m-0 col-6">
+                    <p class="text-start"><i class="bi bi-box2-heart"></i> Entrega: 30 <i class="bi bi-stopwatch"></i> </p>
+                </div>
+
+
+            </div>
         </div>
     </nav>
     <main class="container-fluid p-0 cardapius-main">
-        <section class="d-flex container-fluid flex-column justify-content-center align-items-center cardapius-section-destaque" id="cardapius-destaqe">
+        <section class="d-flex container-fluid flex-column justify-content-center align-items-center py-2 cardapius-section-destaque" id="cardapius-destaqe">
             <div class="container d-flex flex-column justify-content-center align-items-center cardapius-destaque">
-                <h1 class="cardapius-text-destaque text-center my-2 fs-1 fw-bolder">Aproveite Nossas Promoções</h1>
+                <h1 class="cardapius-text-destaque text-center my-2 text-title text-uppercase fw-bolder">Aproveite Nossas Promoções</h1>
             </div>
-            <div id="cardapius-carrousel" class="carousel container-fluid slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-indicators">
+            <div id="cardapius-carrousel" class="carousel px-0 container-fluid slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators mb-0">
                   <button type="button" data-bs-target="#cardapius-carrousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#cardapius-carrousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#cardapius-carrousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -63,141 +88,45 @@
                 </button>
             </div>
         </section>
-        <section class="container-fluid py-5 cardapius-main-cardapio" id="cardapius-cardapio">
-            <div class="container align-items-center d-flex px-0 py-2 sticky-top rounded-4 overflow-x-scroll cardapius-barra-categoria">
-                <div class="cardapius-icon px-3 pb-1 d-flex justify-content-center align-content-center">
-                    <i class="bi bi-list fw-bolder text-center fs-1 p-0 m-0"></i>
-                </div>
-                <div class="d-flex w-100 gap-3 cardapius-item-categori-group pe-3 pb-1 overflow-x-scroll">
-                    <p class="cardapius-text-category m-0">teste</p>
-                    <p class="cardapius-text-category m-0">hamburguer</p>
-                    <p class="cardapius-text-category m-0">hamburguer</p>
-                    <p class="cardapius-text-category m-0">hamburguer</p>
-                    <p class="cardapius-text-category m-0">hamburguer</p>
-                    <p class="cardapius-text-category m-0">hamburguer</p>
-                    <p class="cardapius-text-category m-0">hamburguer</p>
-                    <p class="cardapius-text-category m-0">hamburguer</p>
-                    <p class="cardapius-text-category m-0">hamburguer</p>
-                    <p class="cardapius-text-category m-0">hamburguer</p>
-                    <p class="cardapius-text-category m-0">hamburguer</p>
+        <section class="container-fluid py-2 cardapius-main-cardapio" id="cardapius-cardapio">
+            <div class="z-3 sticky-top">
+                <div class="collapse container-fluid position-absolute" id="lista-categoria-drop-down">
+                  <div class="card card-body gap-1 z-3 w-100">
+                    <a class="cardapius-text-category-dropdown text-text m-0 text-decoration-none">hamburguer</a>
+                    <a class="cardapius-text-category-dropdown text-text text-decoration-none">hamburguer</a>
+                    <a class="cardapius-text-category-dropdown text-text text-decoration-none">hamburguer</a>
+                    <a class="cardapius-text-category-dropdown text-text text-decoration-none">hamburguer</a>
+                    <a class="cardapius-text-category-dropdown text-text text-decoration-none">hamburguer</a>
+                    <a class="cardapius-text-category-dropdown text-text text-decoration-none">hamburguer</a>
+                    <a class="cardapius-text-category-dropdown text-text text-decoration-none">hamburguer</a>
+                  </div>
                 </div>
             </div>
-            <div class="cardapius-box-category px-2">
-                <div class="container cardapius-title-category my-5">
-                    <h3 class="text-uppercase cardapius-category-title fw-bold text-center">hamburguer</h3>
+            <div class="container align-items-center d-flex px-0 pe-3 py-2 z-0 sticky-top rounded-4 overflow-x-scroll cardapius-barra-categoria">
+                <div class="cardapius-icon px-3  pb-1 d-flex justify-content-center align-content-center">
+                    <i class="bi bi-list fw-bolder text-center fs-1 p-0 m-0" data-bs-toggle="collapse"  data-bs-target="#lista-categoria-drop-down" aria-expanded="false" aria-controls="lista-categoria-drop-down"></i>
                 </div>
-                <div class="row rounded-4 cardapius-product-item my-4 py-3 my-1">
-                    <div class="col-4 d-flex align-items-center cardapius-div-img-product">
-                        <img class="img-fluid rounded-4 cardapius-produtc-imagem" src="assets/img/hamburguer.jpg" alt="">
-                    </div>
-                    <div class="col-8 px-2 d-flex gap-0 flex-column justify-content-evenly">
-                        <div class="row p-0">
-                            <div class="col p-0">
-                                <h4 class="fw-bold cardapius-product-title">PRODUTO JAGUARA</h4>
-                            </div>
-                        </div>
-                        <div class="row p-0">
-                            <div class="col  p-0">
-                                <p class="mb-0 cardapius-product-description">Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur </p>
-                            </div>
-                        </div>
-                        
-                        <div class="row d-flex p-0 justify-content-center align-items-end">
-                            <div class="col-6 p-0">
-                                <h4 class="fw-bold cardapius-product-price">R$ 12,50</h4>
-                            </div>
-                            <div class="col-6 text-end pe-4 p-0">
-                                <i class="bi fw-bold fs-1 bi-bag-plus"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row rounded-4 cardapius-product-item my-4 py-3 my-1">
-                    <div class="col-4 d-flex align-items-center cardapius-div-img-product">
-                        <img class="img-fluid rounded-4 cardapius-produtc-imagem" src="assets/img/hamburguer.jpg" alt="">
-                    </div>
-                    <div class="col-8 px-2 d-flex gap-0 flex-column justify-content-evenly">
-                        <div class="row p-0">
-                            <div class="col p-0">
-                                <h4 class="fw-bold cardapius-product-title">PRODUTO JAGUARA</h4>
-                            </div>
-                        </div>
-                        <div class="row p-0">
-                            <div class="col  p-0">
-                                <p class="mb-0 cardapius-product-description">Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur </p>
-                            </div>
-                        </div>
-                        
-                        <div class="row d-flex p-0 justify-content-center align-items-end">
-                            <div class="col-6 p-0">
-                                <h4 class="fw-bold cardapius-product-price">R$ 12,50</h4>
-                            </div>
-                            <div class="col-6 text-end pe-4 p-0">
-                                <i class="bi fw-bold fs-1 bi-bag-plus"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row rounded-4 cardapius-product-item my-4 py-3 my-1">
-                    <div class="col-4 d-flex align-items-center cardapius-div-img-product">
-                        <img class="img-fluid rounded-4 cardapius-produtc-imagem" src="assets/img/hamburguer.jpg" alt="">
-                    </div>
-                    <div class="col-8 px-2 d-flex gap-0 flex-column justify-content-evenly">
-                        <div class="row p-0">
-                            <div class="col p-0">
-                                <h4 class="fw-bold cardapius-product-title">PRODUTO JAGUARA</h4>
-                            </div>
-                        </div>
-                        <div class="row p-0">
-                            <div class="col  p-0">
-                                <p class="mb-0 cardapius-product-description">Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur </p>
-                            </div>
-                        </div>
-                        
-                        <div class="row d-flex p-0 justify-content-center align-items-end">
-                            <div class="col-6 p-0">
-                                <h4 class="fw-bold cardapius-product-price">R$ 12,50</h4>
-                            </div>
-                            <div class="col-6 text-end pe-4 p-0">
-                                <i class="bi fw-bold fs-1 bi-bag-plus"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row rounded-4 cardapius-product-item my-4 py-3 my-1">
-                    <div class="col-4 d-flex align-items-center cardapius-div-img-product">
-                        <img class="img-fluid rounded-4 cardapius-produtc-imagem" src="assets/img/hamburguer.jpg" alt="">
-                    </div>
-                    <div class="col-8 px-2 d-flex gap-0 flex-column justify-content-evenly">
-                        <div class="row p-0">
-                            <div class="col p-0">
-                                <h4 class="fw-bold cardapius-product-title">PRODUTO JAGUARA</h4>
-                            </div>
-                        </div>
-                        <div class="row p-0">
-                            <div class="col  p-0">
-                                <p class="mb-0 cardapius-product-description">Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur </p>
-                            </div>
-                        </div>
-                        
-                        <div class="row d-flex p-0 justify-content-center align-items-end">
-                            <div class="col-6 p-0">
-                                <h4 class="fw-bold cardapius-product-price">R$ 12,50</h4>
-                            </div>
-                            <div class="col-6 text-end pe-4 p-0">
-                                <i class="bi fw-bold fs-1 bi-bag-plus"></i>
-                            </div>
-                        </div>
-                    </div>
+                <div class="d-flex w-100 gap-3 rounded-3 cardapius-item-categori-group pe-3 pb-1 z-0 overflow-x-scroll">
+                    <p class="cardapius-text-category text-text m-0">teste</p>
+                    <p class="cardapius-text-category text-text m-0">hamburguer</p>
+                    <p class="cardapius-text-category text-text m-0">hamburguer</p>
+                    <p class="cardapius-text-category text-text m-0">hamburguer</p>
+                    <p class="cardapius-text-category text-text m-0">hamburguer</p>
+                    <p class="cardapius-text-category text-text m-0">hamburguer</p>
+                    <p class="cardapius-text-category text-text m-0">hamburguer</p>
+                    <p class="cardapius-text-category text-text m-0">hamburguer</p>
+                    <p class="cardapius-text-category text-text m-0">hamburguer</p>
+                    <p class="cardapius-text-category text-text m-0">hamburguer</p>
+                    <p class="cardapius-text-category text-text m-0">hamburguer</p>
                 </div>
             </div>
-            <div class="cardapius-box-category px-2">
-                <div class="container cardapius-title-category my-5">
-                    <h3 class="text-uppercase cardapius-category-title fw-bold text-center">hamburguer</h3>
+            <div class="container-md cardapius-box-category px-2">
+                <div class="container cardapius-title-category my-3">
+                    <h3 class="text-uppercase cardapius-category-title text-title fw-bold text-center">hamburguer</h3>
                 </div>
                 <div class="row rounded-4 cardapius-product-item my-4 py-3 my-1">
                     <div class="col-4 d-flex align-items-center cardapius-div-img-product">
-                        <img class="img-fluid rounded-4 cardapius-produtc-imagem" src="assets/img/hamburguer.jpg" alt="">
+                        <img class="img-fluid rounded-4 cardapius-produtc-imagem" src="assets/img/produto2.png" alt="">
                     </div>
                     <div class="col-8 px-2 d-flex gap-0 flex-column justify-content-evenly">
                         <div class="row p-0">
@@ -207,7 +136,7 @@
                         </div>
                         <div class="row p-0">
                             <div class="col  p-0">
-                                <p class="mb-0 cardapius-product-description">Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur </p>
+                                <p class="mb-0 pe-2 cardapius-product-description">Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur </p>
                             </div>
                         </div>
                         
@@ -216,14 +145,14 @@
                                 <h4 class="fw-bold cardapius-product-price">R$ 12,50</h4>
                             </div>
                             <div class="col-6 text-end pe-4 p-0">
-                                <i class="bi fw-bold fs-1 bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row rounded-4 cardapius-product-item my-4 py-3 my-1">
                     <div class="col-4 d-flex align-items-center cardapius-div-img-product">
-                        <img class="img-fluid rounded-4 cardapius-produtc-imagem" src="assets/img/hamburguer.jpg" alt="">
+                        <img class="img-fluid rounded-4 cardapius-produtc-imagem" src="assets/img/produto2.png" alt="">
                     </div>
                     <div class="col-8 px-2 d-flex gap-0 flex-column justify-content-evenly">
                         <div class="row p-0">
@@ -233,7 +162,7 @@
                         </div>
                         <div class="row p-0">
                             <div class="col  p-0">
-                                <p class="mb-0 cardapius-product-description">Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur </p>
+                                <p class="mb-0 pe-2 cardapius-product-description">Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur </p>
                             </div>
                         </div>
                         
@@ -242,14 +171,14 @@
                                 <h4 class="fw-bold cardapius-product-price">R$ 12,50</h4>
                             </div>
                             <div class="col-6 text-end pe-4 p-0">
-                                <i class="bi fw-bold fs-1 bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row rounded-4 cardapius-product-item my-4 py-3 my-1">
                     <div class="col-4 d-flex align-items-center cardapius-div-img-product">
-                        <img class="img-fluid rounded-4 cardapius-produtc-imagem" src="assets/img/hamburguer.jpg" alt="">
+                        <img class="img-fluid rounded-4 cardapius-produtc-imagem" src="assets/img/produto2.png" alt="">
                     </div>
                     <div class="col-8 px-2 d-flex gap-0 flex-column justify-content-evenly">
                         <div class="row p-0">
@@ -259,7 +188,7 @@
                         </div>
                         <div class="row p-0">
                             <div class="col  p-0">
-                                <p class="mb-0 cardapius-product-description">Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur </p>
+                                <p class="mb-0 pe-2 cardapius-product-description">Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur </p>
                             </div>
                         </div>
                         
@@ -268,14 +197,14 @@
                                 <h4 class="fw-bold cardapius-product-price">R$ 12,50</h4>
                             </div>
                             <div class="col-6 text-end pe-4 p-0">
-                                <i class="bi fw-bold fs-1 bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row rounded-4 cardapius-product-item my-4 py-3 my-1">
                     <div class="col-4 d-flex align-items-center cardapius-div-img-product">
-                        <img class="img-fluid rounded-4 cardapius-produtc-imagem" src="assets/img/hamburguer.jpg" alt="">
+                        <img class="img-fluid rounded-4 cardapius-produtc-imagem" src="assets/img/produto2.png" alt="">
                     </div>
                     <div class="col-8 px-2 d-flex gap-0 flex-column justify-content-evenly">
                         <div class="row p-0">
@@ -285,7 +214,7 @@
                         </div>
                         <div class="row p-0">
                             <div class="col  p-0">
-                                <p class="mb-0 cardapius-product-description">Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur </p>
+                                <p class="mb-0 pe-2 cardapius-product-description">Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur </p>
                             </div>
                         </div>
                         
@@ -294,19 +223,122 @@
                                 <h4 class="fw-bold cardapius-product-price">R$ 12,50</h4>
                             </div>
                             <div class="col-6 text-end pe-4 p-0">
-                                <i class="bi fw-bold fs-1 bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus"></i>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
+            <div class="cardapius-box-category px-2">
+                <div class="container cardapius-title-category my-3">
+                    <h3 class="text-uppercase cardapius-category-title text-title fw-bold text-center">hamburguer</h3>
+                </div>
+                <div class="row rounded-4 cardapius-product-item my-4 py-3 my-1">
+                    <div class="col-4 d-flex align-items-center cardapius-div-img-product">
+                        <img class="img-fluid rounded-4 cardapius-produtc-imagem" src="assets/img/produto2.png" alt="">
+                    </div>
+                    <div class="col-8 px-2 d-flex gap-0 flex-column justify-content-evenly">
+                        <div class="row p-0">
+                            <div class="col p-0">
+                                <h4 class="fw-bold cardapius-product-title">PRODUTO JAGUARA</h4>
+                            </div>
+                        </div>
+                        <div class="row p-0">
+                            <div class="col  p-0">
+                                <p class="mb-0 pe-2 cardapius-product-description">Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur </p>
+                            </div>
+                        </div>
+                        
+                        <div class="row d-flex p-0 justify-content-center align-items-end">
+                            <div class="col-6 p-0">
+                                <h4 class="fw-bold cardapius-product-price">R$ 12,50</h4>
+                            </div>
+                            <div class="col-6 text-end pe-4 p-0">
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row rounded-4 cardapius-product-item my-4 py-3 my-1">
+                    <div class="col-4 d-flex align-items-center cardapius-div-img-product">
+                        <img class="img-fluid rounded-4 cardapius-produtc-imagem" src="assets/img/produto2.png" alt="">
+                    </div>
+                    <div class="col-8 px-2 d-flex gap-0 flex-column justify-content-evenly">
+                        <div class="row p-0">
+                            <div class="col p-0">
+                                <h4 class="fw-bold cardapius-product-title">PRODUTO JAGUARA</h4>
+                            </div>
+                        </div>
+                        <div class="row p-0">
+                            <div class="col  p-0">
+                                <p class="mb-0 pe-2 cardapius-product-description">Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur </p>
+                            </div>
+                        </div>
+                        
+                        <div class="row d-flex p-0 justify-content-center align-items-end">
+                            <div class="col-6 p-0">
+                                <h4 class="fw-bold cardapius-product-price">R$ 12,50</h4>
+                            </div>
+                            <div class="col-6 text-end pe-4 p-0">
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row rounded-4 cardapius-product-item my-4 py-3 my-1">
+                    <div class="col-4 d-flex align-items-center cardapius-div-img-product">
+                        <img class="img-fluid rounded-4 cardapius-produtc-imagem" src="assets/img/produto2.png" alt="">
+                    </div>
+                    <div class="col-8 px-2 d-flex gap-0 flex-column justify-content-evenly">
+                        <div class="row p-0">
+                            <div class="col p-0">
+                                <h4 class="fw-bold cardapius-product-title">PRODUTO JAGUARA</h4>
+                            </div>
+                        </div>
+                        <div class="row p-0">
+                            <div class="col  p-0">
+                                <p class="mb-0 pe-2 cardapius-product-description">Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur </p>
+                            </div>
+                        </div>
+                        
+                        <div class="row d-flex p-0 justify-content-center align-items-end">
+                            <div class="col-6 p-0">
+                                <h4 class="fw-bold cardapius-product-price">R$ 12,50</h4>
+                            </div>
+                            <div class="col-6 text-end pe-4 p-0">
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row rounded-4 cardapius-product-item my-4 py-3 my-1">
+                    <div class="col-4 d-flex align-items-center cardapius-div-img-product">
+                        <img class="img-fluid rounded-4 cardapius-produtc-imagem" src="assets/img/produto2.png" alt="">
+                    </div>
+                    <div class="col-8 px-2 d-flex gap-0 flex-column justify-content-evenly">
+                        <div class="row p-0">
+                            <div class="col p-0">
+                                <h4 class="fw-bold cardapius-product-title">PRODUTO JAGUARA</h4>
+                            </div>
+                        </div>
+                        <div class="row p-0">
+                            <div class="col  p-0">
+                                <p class="mb-0 pe-2 cardapius-product-description">Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur </p>
+                            </div>
+                        </div>
+                        
+                        <div class="row d-flex p-0 justify-content-center align-items-end">
+                            <div class="col-6 p-0">
+                                <h4 class="fw-bold cardapius-product-price">R$ 12,50</h4>
+                            </div>
+                            <div class="col-6 text-end pe-4 p-0">
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-
-
-
-
     </main>
 
 
@@ -336,7 +368,6 @@
 
 
     <!-- Link Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
